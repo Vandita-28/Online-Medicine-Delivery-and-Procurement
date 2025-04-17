@@ -12,7 +12,7 @@ export function CartProvider({ children }) {
       alert("Please log in to add items to your cart");
       return;
     }
-  
+    console.log(user)
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === medicine._id || item.id === medicine.id);
       if (existingItem) {
